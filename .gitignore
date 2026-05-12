@@ -1,0 +1,34 @@
+# Build and dependencies
+node_modules/
+.next/
+out/
+build/
+
+# Environment variables (NEVER commit personal keys!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs and reports
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+coverage/
+.nyc_output
+
+# System files
+.DS_Store
+*.pem
+
+# IDE and tools
+.vscode/
+.idea/
+.vercel
+.turbo
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts

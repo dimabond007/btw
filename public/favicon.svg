@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+<rect width="256" height="256" fill="#000000"/>
+<circle cx="128" cy="128" r="60" fill="none" stroke="#c62828" stroke-width="3"/>
+<circle cx="128" cy="128" r="40" fill="none" stroke="#c62828" stroke-width="2"/>
+<circle cx="128" cy="128" r="4" fill="#c62828"/>
+<line x1="128" y1="20" x2="128" y2="60" stroke="#c62828" stroke-width="3"/>
+<line x1="128" y1="196" x2="128" y2="236" stroke="#c62828" stroke-width="3"/>
+<line x1="20" y1="128" x2="60" y2="128" stroke="#c62828" stroke-width="3"/>
+<line x1="196" y1="128" x2="236" y2="128" stroke="#c62828" stroke-width="3"/>
+<line x1="128" y1="68" x2="128" y2="88" stroke="#c62828" stroke-width="2"/>
+<line x1="128" y1="168" x2="128" y2="188" stroke="#c62828" stroke-width="2"/>
+<line x1="68" y1="128" x2="88" y2="128" stroke="#c62828" stroke-width="2"/>
+<line x1="168" y1="128" x2="188" y2="128" stroke="#c62828" stroke-width="2"/>
+<path d="M 138 30 L 128 45 L 118 30 Z" fill="#c62828"/>
+<path d="M 138 226 L 128 211 L 118 226 Z" fill="#c62828"/>
+<path d="M 30 118 L 45 128 L 30 138 Z" fill="#c62828"/>
+<path d="M 226 118 L 211 128 L 226 138 Z" fill="#c62828"/>
+</svg>

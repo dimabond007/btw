@@ -1,0 +1,380 @@
+{
+  "nav": {
+    "home": "Home",
+    "system": "The System",
+    "methodology": "Methodology",
+    "training": "Training",
+    "standards": "Standards",
+    "intel": "Intel",
+    "apply": "Apply",
+    "about": "About",
+    "kids": "Kids Program"
+  },
+  "home": {
+    "hero": {
+      "title": "Don't Be The Victim.",
+      "titleAccent": "Be The Weapon.",
+      "subtitle": "Not fitness. Not sport. Preparation for reality.",
+      "cta": "Enter The System"
+    },
+    "doctrine": {
+      "label": "The Doctrine",
+      "title": "The Human Is The Weapon.",
+      "description": "Not equipment. Not machines. You. Be The Weapon is a training system built to develop a human capable of operating under physical and mental load in unpredictable environments.",
+      "points": [
+        "Train for reality",
+        "Build capability under pressure",
+        "Develop the complete fighter"
+      ]
+    },
+    "pyramid": {
+      "label": "The System",
+      "title": "Fighter Development Pyramid",
+      "subtitle": "Every layer supports the next. Without a strong foundation, higher skills cannot function.",
+      "levels": [
+        {
+          "title": "Tactical Capability",
+          "description": "Decisions under pressure. Real environments."
+        },
+        {
+          "title": "Combat Skills",
+          "description": "Grappling. Striking. Control."
+        },
+        {
+          "title": "Physical Capacity",
+          "description": "Strength. Speed. Power. Endurance."
+        }
+      ]
+    },
+    "services": {
+      "label": "Choose Your Path",
+      "title": "Three Ways To Enter The System",
+      "items": [
+        {
+          "id": "academy",
+          "title": "Combat Academy",
+          "description": "Physical training in Rishon LeZion. Grappling, Striking, MMA. Real skills. Real environment.",
+          "tag": "In Person",
+          "cta": "Book a Trial"
+        },
+        {
+          "id": "online",
+          "title": "Online Program",
+          "description": "The BTW methodology delivered digitally. Train anywhere, anytime. No excuses.",
+          "tag": "Remote",
+          "cta": "Start Training"
+        },
+        {
+          "id": "workshops",
+          "title": "Tactical Workshops",
+          "description": "Practical seminars. Close combat, firearms, pressure. One day. Real results.",
+          "tag": "Events",
+          "cta": "Join Next Workshop"
+        }
+      ]
+    },
+    "system": {
+      "label": "The Training System",
+      "title": "Five Components. One Weapon.",
+      "items": [
+        {
+          "title": "Strength",
+          "description": "Functional strength built through fundamental movements. Press. Deadlift. Squat."
+        },
+        {
+          "title": "Speed & Power",
+          "description": "Acceleration, max velocity, change of direction. Athletic movement under load."
+        },
+        {
+          "title": "Aerobic Engine",
+          "description": "Breathing control. Work capacity over time. The engine that keeps you operational."
+        },
+        {
+          "title": "Durability",
+          "description": "Mobility, joint stability, tendon resilience. Built to last."
+        },
+        {
+          "title": "Combat Conditioning",
+          "description": "Sandbags, carries, combat sports. Real load. Asymmetric pressure."
+        }
+      ],
+      "integration": "Together they build one system: A Human Weapon."
+    },
+    "unknown": {
+      "label": "Friday",
+      "title": "The Unknown Challenge.",
+      "description": "You don't know what's coming. Fatigue. Stress. Unpredictability. This is where training becomes real.",
+      "points": [
+        "Unknown workload",
+        "Maximum pressure",
+        "No controlled conditions"
+      ]
+    },
+    "notForEveryone": {
+      "label": "Read This First",
+      "title": "This Is Not For Everyone.",
+      "description": "We are not here to make you comfortable. We are here to make you capable.",
+      "notFor": [
+        "If you want easy workouts — this is not for you",
+        "If you avoid pressure — this is not for you",
+        "If you're looking for comfort — this is not for you"
+      ],
+      "forTitle": "This is for you if:",
+      "for": [
+        "You want real capability",
+        "You train for reality, not appearance",
+        "You are ready to be pushed"
+      ]
+    },
+    "result": {
+      "label": "The Outcome",
+      "title": "Not An Athlete.",
+      "titleAccent": "A Fighter.",
+      "points": ["Strong", "Capable", "Resilient", "Dangerous"],
+      "quote": "Train the body. Develop the fighter. Be the weapon."
+    },
+    "cta": {
+      "title": "Ready To Enter The System?",
+      "description": "Choose your path and start building real capability.",
+      "button": "Apply Now"
+    }
+  },
+  "system": {
+    "hero": {
+      "title": "The System",
+      "subtitle": "A complete training doctrine built on one principle: The Human Is The Weapon."
+    },
+    "doctrine": {
+      "title": "Core Doctrine",
+      "description": "BE THE WEAPON is not a training program. It is a system for developing human capability across all domains — physical, technical, and tactical. Every component is designed to build a complete fighter."
+    },
+    "pillars": {
+      "title": "Five Pillars of The System",
+      "items": [
+        {
+          "title": "Strength",
+          "description": "Functional strength through fundamental movements. Press. Deadlift. Squat. Not for aesthetics — for capability.",
+          "detail": "The foundation of all physical performance. Without strength, speed has no impact. Without strength, endurance has no purpose."
+        },
+        {
+          "title": "Speed & Power",
+          "description": "Acceleration, max velocity, change of direction. Athletic movement under load.",
+          "detail": "Speed kills. Power ends fights. We train both through explosive movements, plyometrics, and sport-specific drills."
+        },
+        {
+          "title": "Aerobic Engine",
+          "description": "Breathing control. Work capacity over time. The engine that keeps you operational.",
+          "detail": "Your aerobic system determines how long you can operate. We build this engine through structured conditioning across all energy systems."
+        },
+        {
+          "title": "Durability",
+          "description": "Mobility, joint stability, tendon resilience. Built to last.",
+          "detail": "The most dangerous weapon is one that never breaks. Durability training ensures you remain operational through years of training and real-world application."
+        },
+        {
+          "title": "Combat Conditioning",
+          "description": "Sandbags, carries, combat sports. Real load. Asymmetric pressure.",
+          "detail": "Where physical capacity meets combat application. Loaded carries, sandbag work, and combat sport conditioning bridge the gap between the gym and the field."
+        }
+      ]
+    },
+    "pyramid": {
+      "title": "The Fighter Development Pyramid",
+      "description": "Every capability is built on the layer below. Skip a level, and everything above it collapses."
+    }
+  },
+  "methodology": {
+    "hero": {
+      "title": "Methodology",
+      "subtitle": "How we build fighters. The process behind the system."
+    },
+    "gpp": {
+      "title": "General Physical Preparedness",
+      "description": "Inspired by CrossFit methodology, adapted for tactical application. We develop across 10 physical skills:",
+      "skills": ["Cardiovascular Endurance", "Stamina", "Strength", "Flexibility", "Power", "Speed", "Coordination", "Agility", "Balance", "Accuracy"]
+    },
+    "conditioning": {
+      "title": "Strength & Conditioning Model",
+      "gppTitle": "GPP — General",
+      "gppDesc": "Foundation for all. Broad physical development across all domains.",
+      "sppTitle": "SPP — Specific",
+      "sppDesc": "Combat-specific conditioning. Targeted preparation for fighting demands."
+    },
+    "metcons": {
+      "title": "Metabolic Conditioning",
+      "types": [
+        {
+          "title": "Short MetCons",
+          "description": "High intensity, short duration. Under 5 minutes. Maximum output."
+        },
+        {
+          "title": "Medium MetCons",
+          "description": "10-20 minutes. Mixed modalities. Sustained intensity."
+        },
+        {
+          "title": "Long MetCons",
+          "description": "20+ minutes. Aerobic capacity. Pacing and endurance."
+        }
+      ]
+    },
+    "energy": {
+      "title": "Energy Systems",
+      "systems": [
+        { "name": "Phosphagen", "range": "0-10 sec", "desc": "Maximum power output" },
+        { "name": "Glycolytic", "range": "10 sec - 2 min", "desc": "High intensity sustained effort" },
+        { "name": "Oxidative", "range": "2+ min", "desc": "Endurance and recovery" }
+      ]
+    },
+    "quality": {
+      "title": "Movement Quality",
+      "points": ["Mobility work", "Joint stability", "Tendon resilience", "Injury prevention"]
+    }
+  },
+  "training": {
+    "hero": {
+      "title": "Training",
+      "subtitle": "The weekly cycle. Structure meets chaos."
+    },
+    "structure": {
+      "title": "Weekly Training Structure",
+      "description": "Each week is designed to develop all components of the system. Different days target different capacities.",
+      "days": [
+        { "day": "Sunday", "focus": "Strength", "description": "Heavy compound movements. Building raw power." },
+        { "day": "Monday", "focus": "Combat Skills", "description": "Grappling, striking, MMA integration." },
+        { "day": "Tuesday", "focus": "Speed & Power", "description": "Explosive work. Plyometrics. Athletic development." },
+        { "day": "Wednesday", "focus": "Aerobic Engine", "description": "Long conditioning. Building work capacity." },
+        { "day": "Thursday", "focus": "Combat Conditioning", "description": "Sandbag work. Carries. Real-world loading." },
+        { "day": "Friday", "focus": "The Unknown", "description": "Unpredictable challenge. No preparation. Pure adaptation." }
+      ]
+    },
+    "unknown": {
+      "title": "The Unknown Challenge",
+      "description": "Every Friday, you face a challenge you didn't prepare for. Unknown format. Unknown duration. Maximum pressure.",
+      "purpose": "This is where training becomes real. In life, you don't get to choose your challenges. Friday teaches you to perform when you can't prepare.",
+      "principles": [
+        "Unknown workload — you never know what's coming",
+        "Maximum pressure — no comfort zone",
+        "No controlled conditions — just like reality",
+        "Tests everything built during the week"
+      ]
+    }
+  },
+  "standards": {
+    "hero": {
+      "title": "Standards",
+      "subtitle": "Measurable benchmarks. Clear levels. No guessing."
+    },
+    "levels": {
+      "title": "Performance Levels",
+      "description": "Every fighter is measured against objective standards. Progress is tracked, not assumed.",
+      "tiers": [
+        { "name": "Foundation", "description": "Basic physical competency. Entry-level standards for all components." },
+        { "name": "Operational", "description": "Combat-ready physical capacity. Able to perform under sustained load." },
+        { "name": "Advanced", "description": "High-performance standards. Exceptional across all domains." },
+        { "name": "Elite", "description": "Top-tier capability. Tactical-grade physical and mental performance." }
+      ]
+    },
+    "metrics": {
+      "title": "Key Metrics",
+      "categories": [
+        { "name": "Strength", "examples": ["Deadlift 2x BW", "Squat 1.5x BW", "Strict Press 0.75x BW"] },
+        { "name": "Conditioning", "examples": ["2km Row < 7:00", "5km Run < 22:00", "500m Row < 1:30"] },
+        { "name": "Combat", "examples": ["5 rounds sparring", "Submission proficiency", "Striking combinations"] }
+      ]
+    }
+  },
+  "intel": {
+    "hero": {
+      "title": "Intel",
+      "subtitle": "Knowledge base. Training insights. Field reports."
+    },
+    "coming": "Intel reports coming soon. Training doctrine, performance analysis, and field notes.",
+    "categories": ["Training Doctrine", "Performance Analysis", "Field Reports", "Nutrition & Recovery"]
+  },
+  "apply": {
+    "hero": {
+      "title": "Apply",
+      "subtitle": "Not everyone gets in. Show us why you belong."
+    },
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "service": "Select Your Path",
+      "serviceOptions": {
+        "academy": "Combat Academy (Rishon LeZion)",
+        "online": "Online Program",
+        "workshops": "Tactical Workshops"
+      },
+      "motivation": "Why is BE THE WEAPON for you?",
+      "motivationPlaceholder": "Tell us why you want to join. What drives you. What you're looking for. There are no wrong answers — only honest ones.",
+      "submit": "Submit Application",
+      "submitting": "Submitting...",
+      "success": "Application submitted. We will review and contact you.",
+      "error": "Something went wrong. Please try again."
+    },
+    "filter": {
+      "title": "Before You Apply",
+      "description": "This is not a gym membership form. This is a commitment to a system that will push you beyond comfort. Make sure you're ready."
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About",
+      "subtitle": "The origin. The mission. The standard."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "BE THE WEAPON was founded on one belief: The human body and mind, when properly trained, become the most effective weapon. We don't sell memberships. We build fighters."
+    },
+    "location": {
+      "title": "Location",
+      "city": "Rishon LeZion, Israel",
+      "description": "Our Combat Academy operates in Rishon LeZion. A raw, purpose-built training facility designed for serious preparation."
+    },
+    "contact": {
+      "title": "Contact",
+      "phone": "054-7244553",
+      "instagram": "@betheweaponisrael",
+      "cta": "Ready to start? Apply now."
+    }
+  },
+  "kids": {
+    "hero": {
+      "title": "Kids Program",
+      "subtitle": "Building capable young fighters. Discipline. Skill. Resilience."
+    },
+    "intro": {
+      "title": "Training The Next Generation",
+      "description": "Our kids program adapts the BTW methodology for young athletes. We build physical capacity, teach combat skills, and develop mental toughness — all in a structured, age-appropriate environment."
+    },
+    "benefits": {
+      "title": "What They Learn",
+      "items": [
+        { "title": "Discipline", "description": "Structure, respect, and focus through martial arts training." },
+        { "title": "Physical Development", "description": "Strength, coordination, and athletic ability appropriate for their age." },
+        { "title": "Self-Defense", "description": "Real combat skills: grappling, striking fundamentals, situational awareness." },
+        { "title": "Mental Toughness", "description": "Learning to handle pressure, setbacks, and challenges with composure." }
+      ]
+    },
+    "ages": {
+      "title": "Age Groups",
+      "groups": [
+        { "range": "6-9", "name": "Foundation", "description": "Motor skills, basic martial arts, games-based training." },
+        { "range": "10-13", "name": "Development", "description": "Technical skills, light sparring, structured conditioning." },
+        { "range": "14-17", "name": "Advanced", "description": "Full combat training, competition prep, system integration." }
+      ]
+    },
+    "cta": {
+      "title": "Enroll Your Child",
+      "description": "Give them the tools to be strong, capable, and resilient.",
+      "button": "Apply for Kids Program"
+    }
+  },
+  "footer": {
+    "tagline": "Train the body. Develop the fighter. Be the weapon.",
+    "phone": "054-7244553",
+    "location": "Rishon LeZion, Israel",
+    "rights": "All rights reserved."
+  }
+}
