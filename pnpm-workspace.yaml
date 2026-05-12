@@ -1,9 +1,6 @@
 ignoredBuiltDependencies:
-  - '@parcel/watcher'
-  - '@prisma/client'
-  - '@prisma/engines'
-  - '@swc/core'
+  - "@parcel/watcher"
+  - "@swc/core"
   - es5-ext
   - esbuild
-  - prisma
   - unrs-resolver

@@ -2,14 +2,20 @@
   "name": "btw",
   "private": true,
   "scripts": {
-    "postinstall": "prisma generate",
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "prisma": {
     "seed": "tsx --require dotenv/config scripts/safe-seed.ts"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@prisma/client",
+      "prisma",
+      "esbuild"
+    ]
   },
   "devDependencies": {
     "@next/swc-wasm-nodejs": "13.5.1",
