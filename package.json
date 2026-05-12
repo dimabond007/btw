@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "btw",
   "private": true,
   "scripts": {
     "postinstall": "prisma generate",
