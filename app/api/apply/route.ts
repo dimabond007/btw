@@ -1,7 +1,7 @@
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
-import { NextResponse } from 'next/server';
-import { prisma } from '@/lib/prisma';
+import { NextResponse } from "next/server";
+import { prisma } from "@/lib/prisma";
 
 export async function POST(request: Request) {
   try {
@@ -11,26 +11,28 @@ export async function POST(request: Request) {
 
     if (!name || !email || !phone || !service || !motivation) {
       return NextResponse.json(
-        { success: false, message: 'All fields are required' },
-        { status: 400 }
+        { success: false, message: "All fields are required" },
+        { status: 400 },
       );
     }
 
     const application = await prisma.application.create({
       data: {
-        name: String(name ?? ''),
-        email: String(email ?? ''),
-        phone: String(phone ?? ''),
-        service: String(service ?? ''),
-        motivation: String(motivation ?? ''),
-        locale: String(locale ?? 'en'),
+        name: String(name ?? ""),
+        email: String(email ?? ""),
+        phone: String(phone ?? ""),
+        service: String(service ?? ""),
+        motivation: String(motivation ?? ""),
+        locale: String(locale ?? "en"),
       },
     });
 
     // Send email notification
     try {
-      const appUrl = process.env.NEXTAUTH_URL || '';
-      const appName = appUrl ? new URL(appUrl).hostname?.split('.')?.[0] : 'BTW';
+      const appUrl = process.env.NEXTAUTH_URL || "";
+      const appName = appUrl
+        ? new URL(appUrl).hostname?.split(".")?.[0]
+        : "BTW";
 
       const htmlBody = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #1a1a1a; color: #e0e0e0; padding: 30px;">
@@ -56,9 +58,9 @@ export async function POST(request: Request) {
         </div>
       `;
 
-      await fetch('https://apps.abacus.ai/api/sendNotificationEmail', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+      await fetch("https://apps.abacus.ai/api/sendNotificationEmail", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           deployment_token: process.env.ABACUSAI_API_KEY,
           app_id: process.env.WEB_APP_ID,
@@ -66,24 +68,26 @@ export async function POST(request: Request) {
           subject: `New BTW Application: ${name} - ${service}`,
           body: htmlBody,
           is_html: true,
-          recipient_email: 'dimistma@gmail.com',
-          sender_email: appUrl ? `noreply@${new URL(appUrl).hostname}` : undefined,
-          sender_alias: 'BE THE WEAPON',
+          recipient_email: "dimistma@gmail.com",
+          sender_email: appUrl
+            ? `noreply@${new URL(appUrl).hostname}`
+            : undefined,
+          sender_alias: "BE THE WEAPON",
         }),
       });
     } catch (emailError: any) {
-      console.error('Email notification error:', emailError);
+      console.error("Email notification error:", emailError);
     }
 
     return NextResponse.json({
       success: true,
-      id: application?.id ?? '',
+      id: application?.id ?? "",
     });
   } catch (error: any) {
-    console.error('Application error:', error);
+    console.error("Application error:", error);
     return NextResponse.json(
-      { success: false, message: 'Failed to submit application' },
-      { status: 500 }
+      { success: false, message: "Failed to submit application" },
+      { status: 500 },
     );
   }
 }
