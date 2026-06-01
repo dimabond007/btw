@@ -5,8 +5,15 @@ import { FadeIn } from '@/components/ui/animate';
 import { Target, Swords, Dumbbell } from 'lucide-react';
 
 const pyramidIcons = [Target, Swords, Dumbbell];
-const pyramidWidths = ['w-full max-w-md', 'w-full max-w-lg', 'w-full max-w-2xl'];
-const pyramidColors = [
+const pyramidWidths = [
+
+  'w-[78vw] max-w-[320px]',
+
+  'w-[86vw] max-w-[460px]',
+
+  'w-[94vw] max-w-[620px]',
+
+]; const pyramidColors = [
   'bg-red-700/30 border-red-700/50',
   'bg-red-900/20 border-red-800/40',
   'bg-white/5 border-white/10',
