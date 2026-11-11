@@ -15,6 +15,7 @@ const navItems = [
   { key: 'standards', href: '/standards' },
   { key: 'kids', href: '/kids' },
   { key: 'about', href: '/about' },
+  { key: 'shop', href: '/shop' },
 ];
 
 const localeNames: Record<string, string> = {

@@ -8,135 +8,238 @@
     "intel": "Intel",
     "apply": "Apply",
     "about": "About",
-    "kids": "Kids Program"
+    "kids": "Kids Program",
+    "shop": "Shop"
   },
   "home": {
     "hero": {
-      "title": "Don't Be The Victim.",
-      "titleAccent": "Be The Weapon.",
-      "subtitle": "Not fitness. Not sport. Preparation for reality.",
-      "cta": "Enter The System"
-    },
-    "doctrine": {
-      "label": "The Doctrine",
-      "title": "The Human Is The Weapon.",
-      "description": "Not equipment. Not machines. You. Be The Weapon is a training system built to develop a human capable of operating under physical and mental load in unpredictable environments.",
-      "points": [
-        "Train for reality",
-        "Build capability under pressure",
-        "Develop the complete fighter"
-      ]
+      "eyebrow": "Fitness · Close combat · Shooting",
+      "title": "BE THE WEAPON",
+      "slogan": "Bringing Manhood Back",
+      "lead": "One method that builds a citizen-fighter from the ground up: a strong body, the ability to fight, control of a weapon.",
+      "ctaTrial": "Book a trial session",
+      "ctaOnline": "Online program",
+      "scroll": "The pyramid"
     },
     "pyramid": {
-      "label": "The System",
-      "title": "Fighter Development Pyramid",
-      "subtitle": "Every layer supports the next. Without a strong foundation, higher skills cannot function.",
+      "label": "The method",
+      "title": "The Fighter Development Pyramid",
+      "subtitle": "Four layers, bottom to top. Each one rests on the layer below it, and only all of them together give the result.",
+      "hint": "Tap a layer",
       "levels": [
         {
-          "title": "Tactical Capability",
-          "description": "Decisions under pressure. Real environments."
+          "id": "citizen",
+          "num": "04",
+          "title": "Citizen-Fighter",
+          "tagline": "All of it together, under pressure.",
+          "description": "The apex is not one more skill. It is the three layers joined in one person: a body that holds up, the ability to fight up close, and control of a weapon. A citizen people can rely on when something happens.",
+          "items": [
+            "Fitness",
+            "Close combat",
+            "Shooting",
+            "Decisions under pressure"
+          ]
         },
         {
-          "title": "Combat Skills",
-          "description": "Grappling. Striking. Control."
+          "id": "shooting",
+          "num": "03",
+          "title": "Shooting & weapon control",
+          "tagline": "The weapon is a tool. The hand holding it is what matters.",
+          "description": "Correct, safe use of a weapon: grip, draw, accuracy, clearing malfunctions and shooting after effort. Shooting completes the two layers below it and does not replace them.",
+          "items": [
+            "Safety",
+            "Draw and grip",
+            "Accuracy",
+            "Malfunctions",
+            "Shooting under effort"
+          ]
         },
         {
-          "title": "Physical Capacity",
-          "description": "Strength. Speed. Power. Endurance."
+          "id": "combat",
+          "num": "02",
+          "title": "Close combat",
+          "tagline": "Built on grappling and striking.",
+          "description": "Dealing with violence at zero range, standing and on the ground. Wrestling, takedowns and control alongside punches and kicks. No forms and no points: what works against someone who resists.",
+          "items": [
+            "Grappling",
+            "Striking",
+            "Standing",
+            "Ground",
+            "Controlling an opponent"
+          ]
+        },
+        {
+          "id": "fitness",
+          "num": "01",
+          "title": "Physical fitness",
+          "tagline": "The base. Without it, nothing above it holds.",
+          "description": "The ten components of physical fitness, developed together and not one at the expense of another. A body that can carry, run, lift and keep working when it is tired.",
+          "items": [
+            "Cardiorespiratory endurance",
+            "Stamina",
+            "Strength",
+            "Flexibility",
+            "Power",
+            "Speed",
+            "Coordination",
+            "Agility",
+            "Balance",
+            "Accuracy"
+          ]
         }
       ]
     },
-    "services": {
-      "label": "Choose Your Path",
-      "title": "Three Ways To Enter The System",
-      "items": [
+    "why": {
+      "label": "Why all of it together",
+      "title": "One layer alone does not work.",
+      "lead": "Most people who hold a gun license, or train a little, are sure they can protect themselves and their family. In practice, most cannot.",
+      "rows": [
         {
-          "id": "academy",
-          "title": "Combat Academy",
-          "description": "Physical training in Rishon LeZion. Grappling, Striking, MMA. Real skills. Real environment.",
-          "tag": "In Person",
-          "cta": "Book a Trial"
+          "name": "The gym and CrossFit",
+          "gives": "give you a base",
+          "missing": "without knowing what to do with it when someone attacks."
         },
         {
-          "id": "online",
-          "title": "Online Program",
-          "description": "The BTW methodology delivered digitally. Train anywhere, anytime. No excuses.",
-          "tag": "Remote",
-          "cta": "Start Training"
+          "name": "Krav Maga and martial arts",
+          "gives": "give you one layer",
+          "missing": "without the body that keeps it going after thirty seconds of a fight."
         },
         {
-          "id": "workshops",
-          "title": "Tactical Workshops",
-          "description": "Practical seminars. Close combat, firearms, pressure. One day. Real results.",
-          "tag": "Events",
-          "cta": "Join Next Workshop"
-        }
-      ]
-    },
-    "system": {
-      "label": "The Training System",
-      "title": "Five Components. One Weapon.",
-      "items": [
-        {
-          "title": "Strength",
-          "description": "Functional strength built through fundamental movements. Press. Deadlift. Squat."
-        },
-        {
-          "title": "Speed & Power",
-          "description": "Acceleration, max velocity, change of direction. Athletic movement under load."
-        },
-        {
-          "title": "Aerobic Engine",
-          "description": "Breathing control. Work capacity over time. The engine that keeps you operational."
-        },
-        {
-          "title": "Durability",
-          "description": "Mobility, joint stability, tendon resilience. Built to last."
-        },
-        {
-          "title": "Combat Conditioning",
-          "description": "Sandbags, carries, combat sports. Real load. Asymmetric pressure."
+          "name": "The shooting range",
+          "gives": "gives you shooting",
+          "missing": "without the way to reach your weapon, and without the heart rate of a real situation."
         }
       ],
-      "integration": "Together they build one system: A Human Weapon."
+      "quote": "If you had to carry your child tomorrow night, could you?",
+      "conclusion": "Anyone who wants to be truly able to protect their family and the people around them needs every layer, one on top of the other.",
+      "punch": "Be an asset. Not a burden."
     },
-    "unknown": {
-      "label": "Friday",
-      "title": "The Unknown Challenge.",
-      "description": "You don't know what's coming. Fatigue. Stress. Unpredictability. This is where training becomes real.",
-      "points": [
-        "Unknown workload",
-        "Maximum pressure",
-        "No controlled conditions"
-      ]
-    },
-    "notForEveryone": {
-      "label": "Read This First",
-      "title": "This Is Not For Everyone.",
-      "description": "We are not here to make you comfortable. We are here to make you capable.",
-      "notFor": [
-        "If you want easy workouts — this is not for you",
-        "If you avoid pressure — this is not for you",
-        "If you're looking for comfort — this is not for you"
+    "ways": {
+      "label": "How to start",
+      "title": "Ways in",
+      "academiesTitle": "The combat academies",
+      "academiesText": "Regular training on the mat: close combat and fitness, with coaches and a group.",
+      "trial": "Book a trial session on WhatsApp",
+      "waText": "Hi, I'd like to book a trial session at Be The Weapon",
+      "branches": [
+        {
+          "city": "Rishon LeZion",
+          "address": "8 Yosef Sapir St.",
+          "phone": "054-724-4553",
+          "wa": "972547244553",
+          "map": "יוסף ספיר 8 ראשון לציון"
+        },
+        {
+          "city": "Eilat",
+          "address": "11 HaDayag St.",
+          "phone": "054-440-4016",
+          "wa": "972544404016",
+          "map": "הדייג 11 אילת"
+        }
       ],
-      "forTitle": "This is for you if:",
-      "for": [
-        "You want real capability",
-        "You train for reality, not appearance",
-        "You are ready to be pushed"
+      "onlineTitle": "Online programs",
+      "onlineText": "The BTW method in an app. Train anywhere, on a program.",
+      "onlineCta": "See the programs",
+      "workshopsTitle": "Workshops",
+      "workshopsText": "Close combat, fitness and shooting. Focused days, published here.",
+      "workshopsCta": "Upcoming dates",
+      "navigate": "Directions"
+    },
+    "events": {
+      "label": "Calendar",
+      "title": "Coming up",
+      "register": "Register and pay",
+      "more": "More dates will be published here soon.",
+      "emptyTitle": "No open date right now",
+      "emptyText": "The next dates will be published here. Meanwhile, these are the kinds of workshops we run.",
+      "typesTitle": "Workshop types",
+      "types": [
+        {
+          "title": "Close combat",
+          "text": "Tools and techniques for dealing with violence, standing and on the ground."
+        },
+        {
+          "title": "Fitness",
+          "text": "The fighter's base: strength, endurance and work under load."
+        },
+        {
+          "title": "Shooting",
+          "text": "Correct, safe use of a weapon, and shooting combined with physical effort."
+        }
+      ],
+      "items": {
+        "community": {
+          "kind": "Community evening",
+          "title": "Community event",
+          "text": "Beer, a barbecue, laughs and open conversations with Stas and Tomer. A chance to meet new people and be part of a community growing in Israel."
+        },
+        "workshop": {
+          "kind": "Workshop",
+          "title": "Combat & combat-fitness workshop",
+          "text": "Four hours of hands-on training, tools and fighting techniques."
+        }
+      }
+    },
+    "faq": {
+      "label": "Before you start",
+      "title": "Common questions",
+      "items": [
+        {
+          "q": "I have no background at all. Can I start?",
+          "a": "Yes. You need no background to start, and that is exactly the point. The people we most want to help are ordinary citizens, not trained fighters. You start from the base and build from there."
+        },
+        {
+          "q": "Do I need a gun license to start?",
+          "a": "No. Fitness and close combat need no license. A license is required only for the shooting part and the range."
+        },
+        {
+          "q": "How are you different from CrossFit, Krav Maga or a gym?",
+          "a": "Each of them gives one layer. With us, fitness is the base for ability, close combat is the way to deal with violence, and shooting completes the two. The method is the three of them joined."
+        },
+        {
+          "q": "Who is it for?",
+          "a": "For anyone who wants to be someone people can rely on when something happens. Most of our members are fathers, reservists and licensed gun owners with full-time jobs. Security personnel, martial artists and women train with us too."
+        },
+        {
+          "q": "I don't live near Rishon LeZion or Eilat. What are my options?",
+          "a": "The online programs in the app let you train the method from anywhere. There are also workshops, and their dates are published on this page."
+        },
+        {
+          "q": "How do I start?",
+          "a": "Send a WhatsApp message and book a trial session at one of the branches, or join the online program and start from home."
+        }
       ]
     },
-    "result": {
-      "label": "The Outcome",
-      "title": "Not An Athlete.",
-      "titleAccent": "A Fighter.",
-      "points": ["Strong", "Capable", "Resilient", "Dangerous"],
-      "quote": "Train the body. Develop the fighter. Be the weapon."
+    "contact": {
+      "title": "Got a question?",
+      "text": "About training, workshops, programs or anything else. Talk to us.",
+      "whatsapp": "Message us on WhatsApp",
+      "call": "Or call",
+      "phone": "054-724-4553",
+      "wa": "972547244553",
+      "waText": "Hi, I have a question about Be The Weapon"
     },
-    "cta": {
-      "title": "Ready To Enter The System?",
-      "description": "Choose your path and start building real capability.",
-      "button": "Apply Now"
+    "shop": {
+      "label": "Shop",
+      "title": "The BTW shop",
+      "text": "Our products will go on sale here. The first ones are on the way.",
+      "soon": "Coming soon",
+      "buy": "Buy",
+      "nav": "Shop",
+      "items": {
+        "p1": {
+          "name": "First product",
+          "text": "The product name, a short description and the price will appear here."
+        },
+        "p2": {
+          "name": "Second product",
+          "text": "The product name, a short description and the price will appear here."
+        },
+        "p3": {
+          "name": "Third product",
+          "text": "The product name, a short description and the price will appear here."
+        }
+      }
     }
   },
   "system": {
@@ -191,7 +294,18 @@
     "gpp": {
       "title": "General Physical Preparedness",
       "description": "Inspired by CrossFit methodology, adapted for tactical application. We develop across 10 physical skills:",
-      "skills": ["Cardiovascular Endurance", "Stamina", "Strength", "Flexibility", "Power", "Speed", "Coordination", "Agility", "Balance", "Accuracy"]
+      "skills": [
+        "Cardiovascular Endurance",
+        "Stamina",
+        "Strength",
+        "Flexibility",
+        "Power",
+        "Speed",
+        "Coordination",
+        "Agility",
+        "Balance",
+        "Accuracy"
+      ]
     },
     "conditioning": {
       "title": "Strength & Conditioning Model",
@@ -220,14 +334,31 @@
     "energy": {
       "title": "Energy Systems",
       "systems": [
-        { "name": "Phosphagen", "range": "0-10 sec", "desc": "Maximum power output" },
-        { "name": "Glycolytic", "range": "10 sec - 2 min", "desc": "High intensity sustained effort" },
-        { "name": "Oxidative", "range": "2+ min", "desc": "Endurance and recovery" }
+        {
+          "name": "Phosphagen",
+          "range": "0-10 sec",
+          "desc": "Maximum power output"
+        },
+        {
+          "name": "Glycolytic",
+          "range": "10 sec - 2 min",
+          "desc": "High intensity sustained effort"
+        },
+        {
+          "name": "Oxidative",
+          "range": "2+ min",
+          "desc": "Endurance and recovery"
+        }
       ]
     },
     "quality": {
       "title": "Movement Quality",
-      "points": ["Mobility work", "Joint stability", "Tendon resilience", "Injury prevention"]
+      "points": [
+        "Mobility work",
+        "Joint stability",
+        "Tendon resilience",
+        "Injury prevention"
+      ]
     }
   },
   "training": {
@@ -239,12 +370,36 @@
       "title": "Weekly Training Structure",
       "description": "Each week is designed to develop all components of the system. Different days target different capacities.",
       "days": [
-        { "day": "Sunday", "focus": "Strength", "description": "Heavy compound movements. Building raw power." },
-        { "day": "Monday", "focus": "Combat Skills", "description": "Grappling, striking, MMA integration." },
-        { "day": "Tuesday", "focus": "Speed & Power", "description": "Explosive work. Plyometrics. Athletic development." },
-        { "day": "Wednesday", "focus": "Aerobic Engine", "description": "Long conditioning. Building work capacity." },
-        { "day": "Thursday", "focus": "Combat Conditioning", "description": "Sandbag work. Carries. Real-world loading." },
-        { "day": "Friday", "focus": "The Unknown", "description": "Unpredictable challenge. No preparation. Pure adaptation." }
+        {
+          "day": "Sunday",
+          "focus": "Strength",
+          "description": "Heavy compound movements. Building raw power."
+        },
+        {
+          "day": "Monday",
+          "focus": "Combat Skills",
+          "description": "Grappling, striking, MMA integration."
+        },
+        {
+          "day": "Tuesday",
+          "focus": "Speed & Power",
+          "description": "Explosive work. Plyometrics. Athletic development."
+        },
+        {
+          "day": "Wednesday",
+          "focus": "Aerobic Engine",
+          "description": "Long conditioning. Building work capacity."
+        },
+        {
+          "day": "Thursday",
+          "focus": "Combat Conditioning",
+          "description": "Sandbag work. Carries. Real-world loading."
+        },
+        {
+          "day": "Friday",
+          "focus": "The Unknown",
+          "description": "Unpredictable challenge. No preparation. Pure adaptation."
+        }
       ]
     },
     "unknown": {
@@ -268,18 +423,51 @@
       "title": "Performance Levels",
       "description": "Every fighter is measured against objective standards. Progress is tracked, not assumed.",
       "tiers": [
-        { "name": "Foundation", "description": "Basic physical competency. Entry-level standards for all components." },
-        { "name": "Operational", "description": "Combat-ready physical capacity. Able to perform under sustained load." },
-        { "name": "Advanced", "description": "High-performance standards. Exceptional across all domains." },
-        { "name": "Elite", "description": "Top-tier capability. Tactical-grade physical and mental performance." }
+        {
+          "name": "Foundation",
+          "description": "Basic physical competency. Entry-level standards for all components."
+        },
+        {
+          "name": "Operational",
+          "description": "Combat-ready physical capacity. Able to perform under sustained load."
+        },
+        {
+          "name": "Advanced",
+          "description": "High-performance standards. Exceptional across all domains."
+        },
+        {
+          "name": "Elite",
+          "description": "Top-tier capability. Tactical-grade physical and mental performance."
+        }
       ]
     },
     "metrics": {
       "title": "Key Metrics",
       "categories": [
-        { "name": "Strength", "examples": ["Deadlift 2x BW", "Squat 1.5x BW", "Strict Press 0.75x BW"] },
-        { "name": "Conditioning", "examples": ["2km Row < 7:00", "5km Run < 22:00", "500m Row < 1:30"] },
-        { "name": "Combat", "examples": ["5 rounds sparring", "Submission proficiency", "Striking combinations"] }
+        {
+          "name": "Strength",
+          "examples": [
+            "Deadlift 2x BW",
+            "Squat 1.5x BW",
+            "Strict Press 0.75x BW"
+          ]
+        },
+        {
+          "name": "Conditioning",
+          "examples": [
+            "2km Row < 7:00",
+            "5km Run < 22:00",
+            "500m Row < 1:30"
+          ]
+        },
+        {
+          "name": "Combat",
+          "examples": [
+            "5 rounds sparring",
+            "Submission proficiency",
+            "Striking combinations"
+          ]
+        }
       ]
     }
   },
@@ -289,7 +477,12 @@
       "subtitle": "Knowledge base. Training insights. Field reports."
     },
     "coming": "Intel reports coming soon. Training doctrine, performance analysis, and field notes.",
-    "categories": ["Training Doctrine", "Performance Analysis", "Field Reports", "Nutrition & Recovery"]
+    "categories": [
+      "Training Doctrine",
+      "Performance Analysis",
+      "Field Reports",
+      "Nutrition & Recovery"
+    ]
   },
   "apply": {
     "hero": {
@@ -351,18 +544,42 @@
     "benefits": {
       "title": "What They Learn",
       "items": [
-        { "title": "Discipline", "description": "Structure, respect, and focus through martial arts training." },
-        { "title": "Physical Development", "description": "Strength, coordination, and athletic ability appropriate for their age." },
-        { "title": "Self-Defense", "description": "Real combat skills: grappling, striking fundamentals, situational awareness." },
-        { "title": "Mental Toughness", "description": "Learning to handle pressure, setbacks, and challenges with composure." }
+        {
+          "title": "Discipline",
+          "description": "Structure, respect, and focus through martial arts training."
+        },
+        {
+          "title": "Physical Development",
+          "description": "Strength, coordination, and athletic ability appropriate for their age."
+        },
+        {
+          "title": "Self-Defense",
+          "description": "Real combat skills: grappling, striking fundamentals, situational awareness."
+        },
+        {
+          "title": "Mental Toughness",
+          "description": "Learning to handle pressure, setbacks, and challenges with composure."
+        }
       ]
     },
     "ages": {
       "title": "Age Groups",
       "groups": [
-        { "range": "6-9", "name": "Foundation", "description": "Motor skills, basic martial arts, games-based training." },
-        { "range": "10-13", "name": "Development", "description": "Technical skills, light sparring, structured conditioning." },
-        { "range": "14-17", "name": "Advanced", "description": "Full combat training, competition prep, system integration." }
+        {
+          "range": "6-9",
+          "name": "Foundation",
+          "description": "Motor skills, basic martial arts, games-based training."
+        },
+        {
+          "range": "10-13",
+          "name": "Development",
+          "description": "Technical skills, light sparring, structured conditioning."
+        },
+        {
+          "range": "14-17",
+          "name": "Advanced",
+          "description": "Full combat training, competition prep, system integration."
+        }
       ]
     },
     "cta": {
@@ -372,9 +589,8 @@
     }
   },
   "footer": {
-    "tagline": "Train the body. Develop the fighter. Be the weapon.",
-    "phone": "054-7244553",
-    "location": "Rishon LeZion, Israel",
+    "tagline": "Bringing Manhood Back",
+    "phone": "054-724-4553",
     "rights": "All rights reserved."
   }
 }

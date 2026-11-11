@@ -1,7 +1,8 @@
 'use client';
 
 import { useTranslations } from '@/lib/i18n-context';
-import { Crosshair, Phone, MapPin, Instagram } from 'lucide-react';
+import Image from 'next/image';
+import { Phone, Instagram } from 'lucide-react';
 
 export function Footer() {
   const t = useTranslations('footer');
@@ -12,12 +13,12 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Crosshair className="w-5 h-5 text-red-600" />
+              <Image src="/favicon.png" alt="" width={28} height={28} />
               <span className="font-display font-bold text-sm tracking-[0.2em] uppercase">
                 BE THE WEAPON
               </span>
             </div>
-            <p className="text-white/40 text-sm max-w-xs leading-relaxed">
+            <p dir="ltr" className="font-display text-white/50 text-sm uppercase tracking-[0.25em]">
               {t('tagline')}
             </p>
           </div>
@@ -25,11 +26,7 @@ export function Footer() {
           <div className="flex flex-col gap-3 text-sm text-white/50">
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-red-600/60" />
-              <span>{t('phone')}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-red-600/60" />
-              <span>{t('location')}</span>
+              <a href="tel:0547244553" dir="ltr" className="hover:text-white transition-colors">{t('phone')}</a>
             </div>
             <a
               href="https://instagram.com/betheweaponisrael"
@@ -38,7 +35,7 @@ export function Footer() {
               className="flex items-center gap-2 hover:text-white transition-colors"
             >
               <Instagram className="w-4 h-4 text-red-600/60" />
-              <span>@betheweaponisrael</span>
+              <span dir="ltr">@betheweaponisrael</span>
             </a>
           </div>
         </div>
