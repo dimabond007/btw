@@ -393,6 +393,12 @@ export function HomeClient() {
                             {t(`events.items.${e.id}.kind`)}
                           </div>
                           <h3 className="mt-2 text-2xl md:text-3xl font-black">{t(`events.items.${e.id}.title`)}</h3>
+                          {t(`events.items.${e.id}.place`) !== `events.items.${e.id}.place` && (
+                            <div className="mt-2 inline-flex items-center gap-2 text-white/80">
+                              <MapPin className="w-4 h-4 shrink-0" style={{ color: RED }} />
+                              {t(`events.items.${e.id}.place`)}
+                            </div>
+                          )}
                           <p className="mt-2 max-w-xl text-white/60 leading-relaxed">{t(`events.items.${e.id}.text`)}</p>
                         </div>
                         <div className="relative hidden md:block h-28 overflow-hidden">

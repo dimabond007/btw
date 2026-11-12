@@ -175,7 +175,8 @@
         "workshop": {
           "kind": "Workshop",
           "title": "Combat & combat-fitness workshop",
-          "text": "Four hours of hands-on training, tools and fighting techniques."
+          "text": "Four hours of hands-on training, tools and fighting techniques. All the details are in the registration link.",
+          "place": "Kibbutz Eyal"
         }
       }
     },
