@@ -242,7 +242,7 @@ export function HomeClient() {
           </Parallax>
           <div className="relative -mt-[38vh] md:-mt-[30vh] min-h-[38vh] md:min-h-[30vh] flex items-end pointer-events-none">
             <div className="w-full max-w-7xl mx-auto px-6 md:px-12 pb-12 md:pb-16 text-white">
-              <p className="max-w-3xl font-serif text-3xl md:text-5xl leading-tight">
+              <p className="max-w-3xl text-3xl md:text-5xl font-bold leading-tight">
                 <Rise>{t('why.quote')}</Rise>
               </p>
             </div>
