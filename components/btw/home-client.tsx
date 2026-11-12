@@ -2,8 +2,9 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { AnimatePresence, MotionConfig, motion, useScroll, useTransform } from 'framer-motion';
-import { ArrowDown, ArrowUpRight, MapPin, MessageCircle, Phone, Plus } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, MapPin, MessageCircle, Phone, Plus, ShoppingBag } from 'lucide-react';
 import { useTranslations, useLocale } from '@/lib/i18n-context';
 import { Pyramid } from './pyramid';
 import { Parallax, Rise, Rule, ScrollProgress, Up, Wipe } from './motion';
@@ -163,6 +164,13 @@ export function HomeClient() {
                   {t('hero.ctaOnline')}
                   <ArrowUpRight className="w-4 h-4 rtl:-scale-x-100" />
                 </a>
+                <Link
+                  href={`/${locale}/shop`}
+                  className="btw-btn inline-flex items-center gap-2 px-7 py-4 text-sm font-bold border border-white/40 text-white transition-colors"
+                >
+                  <ShoppingBag className="w-4 h-4" />
+                  {t('hero.ctaShop')}
+                </Link>
               </div>
             </Up>
             <motion.a

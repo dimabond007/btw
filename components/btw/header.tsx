@@ -8,15 +8,18 @@ import { Menu, X, Globe } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 
+// The menu follows the landing page, shop first. The older pages (system, methodology,
+// training, standards, kids, about, apply) still exist by address but are not linked.
 const navItems = [
-  { key: 'system', href: '/system' },
-  { key: 'methodology', href: '/methodology' },
-  { key: 'training', href: '/training' },
-  { key: 'standards', href: '/standards' },
-  { key: 'kids', href: '/kids' },
-  { key: 'about', href: '/about' },
   { key: 'shop', href: '/shop' },
+  { key: 'method', href: '#pyramid' },
+  { key: 'start', href: '#ways' },
+  { key: 'dates', href: '#events' },
+  { key: 'faq', href: '#faq' },
+  { key: 'contact', href: '#contact' },
 ];
+
+const TRIAL_URL = 'https://wa.me/972547244553';
 
 const localeNames: Record<string, string> = {
   en: 'EN',
@@ -52,12 +55,12 @@ export function Header({ locale }: { locale: string }) {
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-1">
           {navItems?.map((item: any) => {
-            const isActive = pathname?.includes(item?.href);
+            const isActive = item?.href?.startsWith('/') && pathname?.includes(item?.href);
             return (
               <Link
                 key={item?.key}
-                href={`/${locale}${item?.href}`}
-                className={`px-3 py-2 text-xs tracking-wider uppercase transition-colors ${isActive ? 'text-red-500' : 'text-white/60 hover:text-white'
+                href={`/${locale}${item?.href}`.replace('/#', '#')}
+                className={`px-3 py-2 text-xs tracking-wider uppercase transition-colors ${isActive ? 'text-red-500' : item?.key === 'shop' ? 'text-white font-bold border-b border-red-600' : 'text-white/60 hover:text-white'
                   }`}
               >
                 {t(item?.key)}
@@ -65,10 +68,12 @@ export function Header({ locale }: { locale: string }) {
             );
           })}
           <Link
-            href={`/${locale}/apply`}
+            href={TRIAL_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="ml-2 px-4 py-2 bg-red-700 hover:bg-red-600 text-white text-xs tracking-wider uppercase font-semibold transition-colors"
           >
-            {t('apply')}
+            {t('trial')}
           </Link>
 
           {/* Language Switcher */}
@@ -120,19 +125,21 @@ export function Header({ locale }: { locale: string }) {
               {navItems?.map((item: any) => (
                 <Link
                   key={item?.key}
-                  href={`/${locale}${item?.href}`}
+                  href={`/${locale}${item?.href}`.replace('/#', '#')}
                   onClick={() => setMobileOpen(false)}
-                  className="block py-2 text-sm text-white/70 hover:text-white uppercase tracking-wider"
+                  className={`block py-2 uppercase tracking-wider hover:text-white ${item?.key === 'shop' ? 'text-lg font-bold text-white' : 'text-sm text-white/70'}`}
                 >
                   {t(item?.key)}
                 </Link>
               ))}
               <Link
-                href={`/${locale}/apply`}
+                href={TRIAL_URL}
+            target="_blank"
+            rel="noopener noreferrer"
                 onClick={() => setMobileOpen(false)}
                 className="block py-2 text-sm text-red-500 font-semibold uppercase tracking-wider"
               >
-                {t('apply')}
+                {t('trial')}
               </Link>
               <div className="flex gap-3 pt-3 border-t border-white/10">
                 {allLocales?.map((l: string) => (
