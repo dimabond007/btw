@@ -8,17 +8,37 @@ datasource db {
     url      = env("DATABASE_URL")
 }
 
-model Application {
-  id          String   @id @default(cuid())
+// Units on hand for one product in one size. A product with no sizes uses option "".
+model Stock {
+  productId String
+  option    String   @default("")
+  quantity  Int      @default(0)
+  updatedAt DateTime @updatedAt
+
+  @@id([productId, option])
+}
+
+// One purchase from the shop. Created when the customer goes to pay (stock is
+// reserved then), and marked paid only after ChatInvoice confirms the payment.
+model Order {
+  id          String    @id // generated in the browser, one per opened order form
+  productId   String
+  productName String // Hebrew name at the time of purchase
+  option      String    @default("")
+  quantity    Int
+  amount      Float // total in shekels
   name        String
-  email       String
   phone       String
-  service     String
-  motivation  String
-  locale      String   @default("en")
-  status      String   @default("pending")
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  email       String?
+  status      String    @default("pending") // pending | paid | collected | cancelled | expired
+  sessionId   String?   @unique // ChatInvoice checkout session
+  sessionUrl  String?
+  receiptUrl  String?
+  test        Boolean   @default(false) // made with a test key: no real money
+  locale      String    @default("he")
+  createdAt   DateTime  @default(now())
+  paidAt      DateTime?
+  collectedAt DateTime?
 
   @@index([status])
   @@index([createdAt])

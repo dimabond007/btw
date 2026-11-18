@@ -255,7 +255,8 @@
         "secure": "Payment is made on a secure ChatInvoice page. A receipt is sent automatically.",
         "errorInvalid": "Please enter a valid name and phone number.",
         "errorGeneral": "Something went wrong. Try again, or message us on WhatsApp.",
-        "testNote": "Test mode – no real money is charged"
+        "testNote": "Test mode – no real money is charged",
+        "errorStock": "This item just sold out."
       },
       "thanks": {
         "paidTitle": "Payment received.",

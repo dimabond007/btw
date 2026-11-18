@@ -20,7 +20,17 @@ function newOrderId() {
 }
 
 /** The order form. It collects who is buying; the card itself is entered on ChatInvoice's page. */
-function BuyDialog({ product, mode, onClose }: { product: BtwProduct & { price: number }; mode: Mode; onClose: () => void }) {
+function BuyDialog({
+  product,
+  mode,
+  stock,
+  onClose,
+}: {
+  product: BtwProduct & { price: number };
+  mode: Mode;
+  stock: Record<string, number> | null; // units left per size; null = stock is not counted
+  onClose: () => void;
+}) {
   const t = useTranslations('home');
   const locale = useLocale();
   // One id per opened form, so a double click can never create two charges.
@@ -28,7 +38,9 @@ function BuyDialog({ product, mode, onClose }: { product: BtwProduct & { price: 
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
-  const [option, setOption] = useState(product.options?.[0] ?? '');
+  const left = (o: string) => (stock ? stock[o] ?? 0 : MAX_QUANTITY);
+  const [option, setOption] = useState(product.options?.find((o) => left(o) > 0) ?? product.options?.[0] ?? '');
+  const maxQuantity = Math.max(1, Math.min(MAX_QUANTITY, left(option)));
   const [quantity, setQuantity] = useState(1);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
@@ -52,7 +64,13 @@ function BuyDialog({ product, mode, onClose }: { product: BtwProduct & { price: 
       if (!res.ok || !data?.url) throw new Error(data?.error ?? 'failed');
       window.location.href = data.url;
     } catch (err: any) {
-      setError(err?.message === 'invalid' ? t('shop.checkout.errorInvalid') : t('shop.checkout.errorGeneral'));
+      setError(
+        err?.message === 'invalid'
+          ? t('shop.checkout.errorInvalid')
+          : err?.message === 'out_of_stock'
+          ? t('shop.checkout.errorStock')
+          : t('shop.checkout.errorGeneral')
+      );
       setBusy(false);
     }
   };
@@ -112,8 +130,12 @@ function BuyDialog({ product, mode, onClose }: { product: BtwProduct & { price: 
                 <button
                   key={o}
                   type="button"
-                  onClick={() => setOption(o)}
-                  className={`min-w-[3rem] border px-3 py-2 text-sm font-bold transition-colors ${
+                  onClick={() => {
+                    setOption(o);
+                    setQuantity((q) => Math.max(1, Math.min(q, left(o))));
+                  }}
+                  disabled={left(o) <= 0}
+                  className={`min-w-[3rem] border px-3 py-2 text-sm font-bold transition-colors disabled:cursor-not-allowed disabled:border-black/10 disabled:bg-transparent disabled:text-black/25 disabled:line-through ${
                     option === o ? 'border-black bg-black text-white' : 'border-black/25 bg-white hover:border-black'
                   }`}
                 >
@@ -133,9 +155,9 @@ function BuyDialog({ product, mode, onClose }: { product: BtwProduct & { price: 
             <span className="w-10 text-center font-bold">{quantity}</span>
             <button
               type="button"
-              onClick={() => setQuantity((q) => Math.min(MAX_QUANTITY, q + 1))}
+              onClick={() => setQuantity((q) => Math.min(maxQuantity, q + 1))}
               className="p-3 disabled:opacity-30"
-              disabled={quantity >= MAX_QUANTITY}
+              disabled={quantity >= maxQuantity}
               aria-label="+"
             >
               <Plus className="w-4 h-4" />
@@ -169,7 +191,7 @@ function BuyDialog({ product, mode, onClose }: { product: BtwProduct & { price: 
 }
 
 // The shop page. Products are set in lib/products.ts; payments go through /api/checkout.
-export function ShopClient({ paymentsMode = 'off' }: { paymentsMode?: Mode }) {
+export function ShopClient({ paymentsMode = 'off', stock = null }: { paymentsMode?: Mode; stock?: Record<string, Record<string, number>> | null }) {
   const t = useTranslations('home');
   const [buying, setBuying] = useState<(BtwProduct & { price: number }) | null>(null);
 
@@ -197,8 +219,11 @@ export function ShopClient({ paymentsMode = 'off' }: { paymentsMode?: Mode }) {
           <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {products.map((p, i) => {
               // A product can be bought only when it is marked for sale AND payments are connected.
-              const buyable = isBuyable(p) && paymentsMode !== 'off';
-              const badge = p.soldOut ? t('shop.soldOut') : buyable ? '' : t('shop.soon');
+              // When stock is counted, a product for sale with nothing left is sold out on its own.
+              const unitsLeft = stock ? Object.values(stock[p.id] ?? {}).reduce((a, b) => a + b, 0) : null;
+              const soldOut = Boolean(p.soldOut) || (isBuyable({ ...p, soldOut: false }) && unitsLeft === 0);
+              const buyable = isBuyable(p) && !soldOut && paymentsMode !== 'off';
+              const badge = soldOut ? t('shop.soldOut') : buyable ? '' : t('shop.soon');
               return (
                 <Up key={p.id} delay={i * 0.12} className="group">
                   <div className="relative aspect-[4/5] overflow-hidden bg-[#111]">
@@ -208,7 +233,7 @@ export function ShopClient({ paymentsMode = 'off' }: { paymentsMode?: Mode }) {
                         alt={t(`shop.items.${p.id}.name`)}
                         fill
                         sizes="(min-width:1024px) 30vw, (min-width:640px) 45vw, 100vw"
-                        className={`object-cover transition-transform duration-700 group-hover:scale-105 ${p.soldOut ? 'grayscale opacity-60' : ''}`}
+                        className={`object-cover transition-transform duration-700 group-hover:scale-105 ${soldOut ? 'grayscale opacity-60' : ''}`}
                       />
                     ) : (
                       <div className="absolute inset-0 flex items-center justify-center">
@@ -222,7 +247,7 @@ export function ShopClient({ paymentsMode = 'off' }: { paymentsMode?: Mode }) {
                       </div>
                     )}
                     {badge && (
-                      <span className="absolute top-4 start-4 px-3 py-1.5 text-xs font-bold text-white" style={{ background: p.soldOut ? '#111' : RED }}>
+                      <span className="absolute top-4 start-4 px-3 py-1.5 text-xs font-bold text-white" style={{ background: soldOut ? '#111' : RED }}>
                         {badge}
                       </span>
                     )}
@@ -261,7 +286,7 @@ export function ShopClient({ paymentsMode = 'off' }: { paymentsMode?: Mode }) {
       </section>
 
       <AnimatePresence>
-        {buying && <BuyDialog product={buying} mode={paymentsMode} onClose={() => setBuying(null)} />}
+        {buying && <BuyDialog product={buying} mode={paymentsMode} stock={stock ? stock[buying.id] ?? {} : null} onClose={() => setBuying(null)} />}
       </AnimatePresence>
     </MotionConfig>
   );

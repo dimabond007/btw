@@ -16,6 +16,7 @@ export function middleware(request: NextRequest) {
   // Skip api, _next, static files
   if (
     pathname.startsWith('/api') ||
+    pathname.startsWith('/admin') ||
     pathname.startsWith('/_next') ||
     pathname.startsWith('/favicon') ||
     pathname.startsWith('/og-') ||
@@ -31,5 +32,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!api|_next|favicon|og-|.*\\..*).*)'],
+  matcher: ['/((?!api|admin|_next|favicon|og-|.*\\..*).*)'],
 };
