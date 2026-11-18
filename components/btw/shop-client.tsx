@@ -161,7 +161,8 @@ function BuyDialog({ product, mode, onClose }: { product: BtwProduct & { price: 
           <Lock className="w-4 h-4" />
           {busy ? t('shop.checkout.sending') : t('shop.checkout.pay')}
         </button>
-        <p className="mt-3 text-xs text-black/50 leading-relaxed">{t('shop.checkout.secure')}</p>
+        <p className="mt-4 text-sm font-bold leading-relaxed">{t('shop.pickup')}</p>
+        <p className="mt-2 text-xs text-black/50 leading-relaxed">{t('shop.checkout.secure')}</p>
       </motion.form>
     </motion.div>
   );
@@ -189,6 +190,7 @@ export function ShopClient({ paymentsMode = 'off' }: { paymentsMode?: Mode }) {
             </h1>
             <Up delay={0.15}>
               <p className="text-xl font-light text-black/65 md:text-end">{t('shop.text')}</p>
+              <p className="mt-3 text-sm font-bold text-black/70 md:text-end">{t('shop.pickup')}</p>
             </Up>
           </div>
 

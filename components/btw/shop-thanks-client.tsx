@@ -65,13 +65,13 @@ export function ShopThanksClient({ state }: { state: ThanksState }) {
             {t('shop.thanks.back')}
           </Link>
           <a
-            href={`https://wa.me/${t('contact.wa')}`}
+            href={`https://wa.me/${t('contact.wa')}${paid ? `?text=${encodeURIComponent(t('shop.thanks.waText'))}` : ''}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-black/70 hover:text-black"
           >
             <MessageCircle className="w-4 h-4" style={{ color: RED }} />
-            {t('shop.thanks.help')}
+            {paid ? t('shop.thanks.help') : t('shop.thanks.helpUnpaid')}
           </a>
         </div>
       </div>

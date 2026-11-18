@@ -259,14 +259,17 @@
       },
       "thanks": {
         "paidTitle": "Payment received.",
-        "paidText": "Thank you. We have your order and will contact you at the phone number you left.",
+        "paidText": "Thank you, we have your order. Pickup is at 8 Yosef Sapir St., Rishon LeZion, by prior arrangement at 054-724-4553.",
         "unpaidTitle": "The payment was not completed.",
         "unpaidText": "Nothing was charged. You can go back to the shop and try again.",
         "total": "Total paid",
         "receipt": "View receipt",
         "back": "Back to the shop",
-        "help": "Need help? Message us on WhatsApp"
-      }
+        "help": "Arrange pickup on WhatsApp",
+        "helpUnpaid": "Need help? Message us on WhatsApp",
+        "waText": "Hi, I ordered on the site and would like to arrange pickup"
+      },
+      "pickup": "Pickup only: 8 Yosef Sapir St., Rishon LeZion, by prior arrangement at 054-724-4553."
     }
   },
   "footer": {
